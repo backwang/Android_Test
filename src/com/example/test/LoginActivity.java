@@ -4,6 +4,9 @@ package com.example.test;
  
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.Toast;
  
  
  
@@ -18,7 +21,14 @@ public class LoginActivity extends Activity {
 
 	// Values for email and password at the time of the login attempt.
 	 
-	
+	public void sendmsg(View view)
+	{
+		Toast toast=new Toast(this);
+		toast = Toast.makeText(getApplicationContext(), 
+				"自定义位置Toast", Toast.LENGTH_LONG); 
+				toast.setGravity(Gravity.CENTER, 0, 0); 
+				toast.show(); 
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

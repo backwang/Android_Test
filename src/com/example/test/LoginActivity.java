@@ -43,9 +43,7 @@ public class LoginActivity extends Activity {
 	// UI references.
 	private EditText mEmailView;
 	private EditText mPasswordView;
-	private View mLoginFormView;
-	private View mLoginStatusView;
-	private TextView mLoginStatusMessageView;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

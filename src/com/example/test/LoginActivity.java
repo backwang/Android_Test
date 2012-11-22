@@ -2,8 +2,20 @@ package com.example.test;
 
  
  
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import junit.framework.Test;
+
 import android.app.Activity;
+import android.app.Service;
+import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Vibrator;
+import android.telephony.gsm.SmsManager;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
@@ -19,13 +31,18 @@ public class LoginActivity extends Activity {
 	 */
 	 
 
-	// Values for email and password at the time of the login attempt.
-	 
+	//发送短消息
+	public void sendsms(View view)
+	{
+		 
+		BootStartUtils abcBootStartUtils=new BootStartUtils(this);
+		List<Map<String, Object>> ccList=abcBootStartUtils.fetchInstalledApps();
+	}
 	public void sendmsg(View view)
 	{
 		Toast toast=new Toast(this);
 		toast = Toast.makeText(getApplicationContext(), 
-				"自定义位置Toast", Toast.LENGTH_LONG); 
+				"我发了一条消息", Toast.LENGTH_LONG); 
 				toast.setGravity(Gravity.CENTER, 0, 0); 
 				toast.show(); 
 	}

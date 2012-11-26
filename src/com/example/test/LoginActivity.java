@@ -11,6 +11,7 @@ import junit.framework.Test;
 import android.app.Activity;
 import android.app.Service;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -35,8 +36,10 @@ public class LoginActivity extends Activity {
 	public void sendsms(View view)
 	{
 		 
-		BootStartUtils abcBootStartUtils=new BootStartUtils(this);
-		List<Map<String, Object>> ccList=abcBootStartUtils.fetchInstalledApps();
+		 
+	 IntentFilter intentFilter=new IntentFilter();
+	 intentFilter.addAction("ACTION_TIME_CHANGED");
+	 registerReceiver(null, intentFilter);
 	}
 	public void sendmsg(View view)
 	{

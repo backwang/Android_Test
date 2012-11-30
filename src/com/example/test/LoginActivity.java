@@ -11,6 +11,7 @@ import junit.framework.Test;
 import android.app.Activity;
 import android.app.Service;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -36,7 +37,10 @@ public class LoginActivity extends Activity {
 	{
 		 
 		 
-		 
+ 
+	 IntentFilter intentFilter=new IntentFilter();
+	 intentFilter.addAction("ACTION_TIME_CHANGED");
+ 
 	}
 	public void sendmsg(View view)
 	{

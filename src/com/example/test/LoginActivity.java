@@ -37,10 +37,16 @@ public class LoginActivity extends Activity {
 	{
 		 
 		 
+<<<<<<< HEAD
  
 	 IntentFilter intentFilter=new IntentFilter();
 	 intentFilter.addAction("ACTION_TIME_CHANGED");
  
+=======
+	 IntentFilter intentFilter=new IntentFilter();
+	 intentFilter.addAction("ACTION_TIME_CHANGED");
+	 registerReceiver(null, intentFilter);
+>>>>>>> branch 'master' of https://github.com/backwang/Android_Test.git
 	}
 	public void sendmsg(View view)
 	{

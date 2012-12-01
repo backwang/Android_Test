@@ -80,9 +80,8 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/tvRating"
             android:numStars="5" />
-<<<<<<< HEAD
-    </LinearLayout>
-=======
+ 
+    
 
     </LinearLayout>
 
@@ -107,18 +106,9 @@
         android:background="@drawable/ic_launcher"
          >
 
-        <RatingBar
-             
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:id="@+id/ratingbar"
-            style="?android:attr/ratingBarStyleSmall"
-            android:layout_width="36dp"
-            android:layout_height="20dp"
-            android:layout_weight="1.19"
-            android:numStars="5"
-            android:secondaryProgress="1" />
-"
+        
+ 
     </FrameLayout>
->>>>>>> branch 'master' of https://github.com/backwang/Android_Test.git
+ 
 
 </LinearLayout>

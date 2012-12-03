@@ -14,10 +14,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int button1=0x7f070001;
-        public static final int button2=0x7f070003;
-        public static final int ivLogo=0x7f070000;
-        public static final int tvApplicationName=0x7f070002;
+        public static final int bigtv=0x7f070001;
+        public static final int btn=0x7f070003;
+        public static final int cb=0x7f070004;
+        public static final int iv=0x7f070000;
+        public static final int smalltv=0x7f070002;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;

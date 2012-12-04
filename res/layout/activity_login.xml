@@ -4,74 +4,71 @@
     android:layout_height="fill_parent"
     android:orientation="horizontal" >
 
-    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
 
-         
-<LinearLayout android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/bigtv"
-                android:layout_width="20dp"
-                android:layout_height="30dp"
-                android:textSize="20sp" />
+        <TextView
+            android:id="@+id/bigtv"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="button" />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button" />
 
-            <TextView
-                android:id="@+id/smalltv"
-                android:layout_width="20dp"
-                android:layout_height="30dp"
-                android:textSize="10sp" />
+        <TextView
+            android:id="@+id/smalltv"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:textSize="10sp" />
 
         <CheckBox
             android:id="@+id/cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-</LinearLayout>
-
-     
-
-    <TableRow android:layout_width="wrap_content">
-
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:ems="10"
-            android:layout_marginLeft="50dp">
-
-            <requestFocus />
-        </EditText>
-         <EditText
-            android:id="@+id/editText1"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:ems="10"
-            android:layout_marginLeft="50dp">
-
-            <requestFocus />
-        </EditText>
-
-    </TableRow>
+    </LinearLayout>
 
     <TableRow
         android:layout_width="wrap_content"
-        android:layout_height="50dp" >
+        android:gravity="center_horizontal" >
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/btn"
-            android:layout_marginLeft="50dp" />
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/btn"
-            android:layout_marginLeft="50dp" />
+        <ToggleButton
+            android:id="@+id/btn_toggle"
+            android:textOff="关闭"
+            android:textOn="打开"
+            android:width="50dp" />
     </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomp"
+            android:width="150dp"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:hint="请输入内容"
+            android:background="#ff0000"
+             />
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_weight="0.22" >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
 
 </TableLayout>

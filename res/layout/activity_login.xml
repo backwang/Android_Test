@@ -33,7 +33,7 @@
     </LinearLayout>
 
     <TableRow
-        android:layout_width="wrap_content"
+        android:width="50dp"
         android:gravity="center_horizontal" >
 
         <ToggleButton
@@ -49,12 +49,21 @@
 
         <AutoCompleteTextView
             android:id="@+id/autocomp"
-            android:width="150dp"
             android:layout_height="wrap_content"
+            android:background="#ff0000"
             android:completionThreshold="1"
             android:hint="请输入内容"
-            android:background="#ff0000"
-             />
+            android:width="150dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+       <Spinner android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                 />
     </TableRow>
 
     <RelativeLayout

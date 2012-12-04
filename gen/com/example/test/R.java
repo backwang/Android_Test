@@ -21,8 +21,9 @@ public final class R {
         public static final int btn=0x7f070001;
         public static final int btn_toggle=0x7f070004;
         public static final int cb=0x7f070003;
-        public static final int imageview=0x7f070006;
+        public static final int imageview=0x7f070007;
         public static final int smalltv=0x7f070002;
+        public static final int spinner=0x7f070006;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;

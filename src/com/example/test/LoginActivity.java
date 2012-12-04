@@ -1,33 +1,23 @@
 package com.example.test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 
-import java.util.List;
-import java.util.Map;
 
-import android.R.integer;
-import android.R.layout;
 import android.app.Activity;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-
 import android.os.Bundle;
 
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
-import android.widget.ImageView.ScaleType;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
-
 import android.widget.ToggleButton;
 
 public class LoginActivity extends Activity {
@@ -42,7 +32,7 @@ public class LoginActivity extends Activity {
 		setContentView(R.layout.activity_login);
 		final ToggleButton toggleButton = (ToggleButton) findViewById(R.id.btn_toggle);
 		final ImageView imageView = (ImageView) findViewById(R.id.imageview);
-
+        final Spinner spinner=(Spinner)findViewById(R.id.spinner);
 		AutoCompleteTextView actv = (AutoCompleteTextView) findViewById(R.id.autocomp);
 		ArrayAdapter<String> bb = new ArrayAdapter<String>(
 				getApplicationContext(),
@@ -51,6 +41,8 @@ public class LoginActivity extends Activity {
 		// …Ë÷√Adapter
 		actv.setAdapter(bb);
 
+		spinner.setAdapter(bb);
+		 
 		toggleButton.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
 			@Override

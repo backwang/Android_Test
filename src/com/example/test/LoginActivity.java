@@ -55,7 +55,7 @@ public class LoginActivity extends Activity {
 		// //实例适配器 
 		adapter = new SimpleAdapter(this, list, R.layout.activity_login, new String[] { 
 		"item1_imageivew", "item1_bigtv", "item1_smalltv" }, new int[] { 
-		R.id.iv, R.id.bigtv, R.id.smalltv }); 
+		 R.id.bigtv, R.id.smalltv }); 
 		listView.setAdapter(adapter); 
 		// //显示列表视图 
 		this.setContentView(listView); 

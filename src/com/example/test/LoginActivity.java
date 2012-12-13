@@ -30,7 +30,7 @@ public class LoginActivity extends Activity {
 
 	public void btn_click(View view)
 	{
-		Intent intent=new Intent(this,TwoActivity.class);
+		Intent intent=new Intent(LoginActivity.this,TwoActivity.class);
 		startActivity(intent);
 	}
 	@Override

@@ -3,6 +3,7 @@ package com.example.test;
 
 
 import android.app.Activity;
+import android.content.Intent;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +11,7 @@ import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
@@ -26,6 +28,11 @@ public class LoginActivity extends Activity {
 			"∑ËøÒWorkflowΩ≤“Â" };
 	public int rate = 10;
 
+	public void btn_click(View view)
+	{
+		Intent intent=new Intent(this,TwoActivity.class);
+		startActivity(intent);
+	}
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -40,7 +47,7 @@ public class LoginActivity extends Activity {
 
 		// …Ë÷√Adapter
 		actv.setAdapter(bb);
-
+		 
 		spinner.setAdapter(bb);
 		 
 		toggleButton.setOnCheckedChangeListener(new OnCheckedChangeListener() {

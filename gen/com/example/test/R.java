@@ -23,9 +23,11 @@ public final class R {
         public static final int imageview=0x7f070007;
         public static final int smalltv=0x7f070002;
         public static final int spinner=0x7f070006;
+        public static final int titletext=0x7f070008;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
+        public static final int two_activity=0x7f030001;
     }
     public static final class menu {
         public static final int activity_login=0x7f060000;

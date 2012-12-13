@@ -2,14 +2,22 @@ package com.example.test;
 
 
 
+import java.io.Serializable;
+
+import com.example.test.R.drawable;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.database.CharArrayBuffer;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Binder;
 import android.os.Bundle;
+import android.os.IBinder;
 
 import android.view.View;
 import android.widget.CompoundButton;
@@ -31,6 +39,9 @@ public class LoginActivity extends Activity {
 	public void btn_click(View view)
 	{
 		Intent intent=new Intent(LoginActivity.this,TwoActivity.class);
+		  
+		 
+	 
 		startActivity(intent);
 	}
 	@Override

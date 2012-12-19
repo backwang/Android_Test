@@ -19,10 +19,12 @@ import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -36,6 +38,20 @@ public class LoginActivity extends Activity {
 			"·è¿ñWorkflow½²Òå" };
 	public int rate = 10;
 
+	public void loadtwo(View view)
+	{
+		LinearLayout loadtwoLayout=(LinearLayout)findViewById(R.id.twoactivity);
+		
+		
+		
+		
+		
+		
+		LayoutInflater inflater = LayoutInflater.from(this);
+		View layout = inflater.inflate(R.layout.two_activity, null); 
+		loadtwoLayout.addView(layout);
+		 
+	}
 	public void btn_click(View view)
 	{
 		Intent intent=new Intent(LoginActivity.this,TwoActivity.class);

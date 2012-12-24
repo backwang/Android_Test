@@ -27,7 +27,14 @@ public final class R {
         public static final int imageview=0x7f070009;
         public static final int smalltv=0x7f070002;
         public static final int spinner=0x7f070006;
-        public static final int titletext=0x7f07000a;
+        public static final int tabhost=0x7f07000a;
+        public static final int text1=0x7f07000b;
+        public static final int text2=0x7f07000c;
+        public static final int text3=0x7f07000d;
+        public static final int text4=0x7f07000e;
+        public static final int text5=0x7f07000f;
+        public static final int text6=0x7f070010;
+        public static final int text7=0x7f070011;
         public static final int twoactivity=0x7f070008;
     }
     public static final class layout {

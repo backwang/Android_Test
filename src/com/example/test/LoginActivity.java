@@ -4,6 +4,8 @@ package com.example.test;
 
 import java.io.Serializable;
 
+import junit.framework.Test;
+
 import com.example.test.R.drawable;
 
 import android.app.Activity;
@@ -56,8 +58,11 @@ public class LoginActivity extends Activity {
 	{
 		Intent intent=new Intent(LoginActivity.this,TwoActivity.class);
 		  
-		 
-	 
+		Bundle bundle=new Bundle();
+		Myclass myclass=new Myclass();
+		myclass.setNameString("haha");
+		bundle.putSerializable("myclass", myclass);
+	    intent.putExtras(bundle);
 		startActivity(intent);
 	}
 	@Override
